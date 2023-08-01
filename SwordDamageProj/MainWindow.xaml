@@ -1,0 +1,17 @@
+﻿<Window x:Class="SwordDamageProj.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SwordDamageProj"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <Grid>
+        <Button x:Name="button" Content="Calculate damage" HorizontalAlignment="Left" Margin="42,117,0,0" VerticalAlignment="Top" Width="190" Height="25" Click="button_Click"/>
+        <CheckBox x:Name="flameCheck" Content="Flame" HorizontalAlignment="Left" Margin="65,59,0,0" VerticalAlignment="Top" Height="20" FontSize="16" Checked="flameCheck_Checked" Unchecked="flameCheck_Unchecked"/>
+        <CheckBox x:Name="magicCheck" Content="Magic" HorizontalAlignment="Center" Margin="0,59,0,0" VerticalAlignment="Top" FontSize="16" Checked="magicCheck_Checked" Unchecked="magicCheck_Unchecked"/>
+        <TextBlock x:Name="text" HorizontalAlignment="Left" Margin="100,157,0,0" TextWrapping="Wrap" Text="Damage" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.271,0.453"/>
+        <ListBox x:Name="listBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="252,29,10,35" SelectionChanged="ListBox_SelectionChanged"/>
+
+    </Grid>
+</Window>
